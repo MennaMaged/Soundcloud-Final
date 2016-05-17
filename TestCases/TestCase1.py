@@ -21,13 +21,17 @@ class TestCase1(BaseTestCase):
         LoginPage.email_submit(self,email)
         # To Submit the email through submit button
         LoginPage.submit_btn1(self)
+
+        if LoginPage.error_mssg(self) == True:
+            self.assertEqual(LoginPage.error_message.text(),"Enter a valid email address","Are Equal")
+        else:
         # To enter the password
-        LoginPage.password_submit(self,password)
+            LoginPage.password_submit(self,password)
         # Final step to submit the pass and login
-        LoginPage.submit_btn2(self)
-        self.driver.implicitly_wait(30)
+            LoginPage.submit_btn2(self)
+            self.driver.implicitly_wait(30)
         # Validate login :
-        self.assertTrue(MyAccount.check_page(self))
+            self.assertTrue(MyAccount.check_page(self))
 
 if __name__ == '__main__':
     unittest.main()

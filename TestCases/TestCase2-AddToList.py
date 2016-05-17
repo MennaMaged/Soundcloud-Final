@@ -1,3 +1,4 @@
+"""""""""""""""""""""""
 import unittest
 from BaseTestCases.BaseTestCase import BaseTestCase
 from Pages.HomePage import HomePage
@@ -16,8 +17,10 @@ class TestCase2(BaseTestCase):
         self.driver.find_element(*LoginPage.submit_btn).click()
 
     def addToList(self):
+        self.driver
 
 
 if __name__ == '__main__':
     unittest.main()
 
+"""""""""""""""""""""""
