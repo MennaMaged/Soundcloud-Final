@@ -23,7 +23,8 @@ class TestCase1(BaseTestCase):
         LoginPage.submit_btn1(self)
 
         if LoginPage.error_mssg(self) == True:
-            self.assertEqual(LoginPage.error_message.text(),"Enter a valid email address","Are Equal")
+            #self.assertEqual(LoginPage.error_message.text,"Enter a valid email address","Not Equal")
+            self.assertEqual("Enter a valid email address",self.driver.find_element_by_css_selector("div.textfield__validation.g-input-message").text)
         else:
         # To enter the password
             LoginPage.password_submit(self,password)

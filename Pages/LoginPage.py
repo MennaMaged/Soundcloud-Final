@@ -11,18 +11,18 @@ class LoginPage():
     error_message = (By.XPATH,".//*[@class='textfield email messageUnder invalid']/label/div/div")
 
     def email_submit(self,email):
-        Login_email = self.driver.find_element(*LoginPage.email_txt).clear()
-        Login_email_sendkeys = self.driver.find_element(*LoginPage.email_txt).send_keys(email)
+        self.driver.find_element(*LoginPage.email_txt).clear()
+        self.driver.find_element(*LoginPage.email_txt).send_keys(email)
 
     def submit_btn1(self):
-        email_submit_btn = self.driver.find_element(*LoginPage.email_cont_btn).click()
+        self.driver.find_element(*LoginPage.email_cont_btn).click()
 
     def password_submit(self,password):
-        Login_pass = self.driver.find_element(*LoginPage.pass_txt).clear()
-        Login_pass_sendkeys = self.driver.find_element(*LoginPage.pass_txt).send_keys(password)
+        self.driver.find_element(*LoginPage.pass_txt).clear()
+        self.driver.find_element(*LoginPage.pass_txt).send_keys(password)
 
     def submit_btn2(self):
-        Login_submit = self.driver.find_element(*LoginPage.submit_btn).click()
+        self.driver.find_element(*LoginPage.submit_btn).click()
 
 
     def error_mssg(self):

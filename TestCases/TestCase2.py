@@ -1,8 +1,8 @@
-"""""""""""""""""""""""
 import unittest
 from BaseTestCases.BaseTestCase import BaseTestCase
 from Pages.HomePage import HomePage
 from Pages.LoginPage import LoginPage
+from Pages.MyAccount import MyAccount
 
 class TestCase2(BaseTestCase):
 
@@ -16,11 +16,10 @@ class TestCase2(BaseTestCase):
         self.driver.find_element(*LoginPage.pass_txt).send_keys("menna1991")
         self.driver.find_element(*LoginPage.submit_btn).click()
 
-    def addToList(self):
-        self.driver
+        MyAccount.search(self)
+
 
 
 if __name__ == '__main__':
     unittest.main()
 
-"""""""""""""""""""""""
