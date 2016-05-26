@@ -18,6 +18,9 @@ class TestCase2(BaseTestCase):
 
         MyAccount.search(self)
 
+        MyAccount.check(self)
+
+
 
 
 if __name__ == '__main__':

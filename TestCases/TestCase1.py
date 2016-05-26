@@ -11,7 +11,7 @@ import time
 # We will call base test case first to run this class
 class TestCase1(BaseTestCase):
     # @data to collect data from this excel sheet from sheet called 'Data'
-    @data(*LoginDataPage.get_data_from_excel('C:/Users/mmaged/Projects/SoundCloud/DataSource/LoginData.xlsx', 'Data'))
+    @data(*LoginDataPage.get_data_from_excel('D:/Project/SoundCloud/DataSource/LoginData.xlsx', 'Data'))
     @unpack
     # This function will take 2 parameters from the previous mentioned excel sheet with the same columns names
     def test_signIn(self,email,password):
