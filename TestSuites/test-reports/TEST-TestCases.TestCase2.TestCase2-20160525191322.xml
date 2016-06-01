@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="TestCases.TestCase2.TestCase2-20160525191322" skipped="0" tests="1" time="117.909">
+	<testcase classname="TestCases.TestCase2.TestCase2" name="test_signIn" time="117.909">
+		<error message="Message: Element is not clickable at point (693.0499877929688, 11.199996948242188). Other element would receive the click: &lt;input aria-expanded=&quot;false&quot; aria-owns=&quot;searchMenuList&quot; aria-autocomplete=&quot;list&quot; class=&quot;headerSearch__input sc-input g-all-transitions-300&quot; placeholder=&quot;Search&quot; name=&quot;q&quot; autocomplete=&quot;off&quot; aria-label=&quot;Search&quot; type=&quot;search&quot;&gt;
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "D:\Project\SoundCloud\TestCases\TestCase2.py", line 19, in test_signIn
+    MyAccount.search(self)
+  File "D:\Project\SoundCloud\Pages\MyAccount.py", line 24, in search
+    self.driver.find_element(*MyAccount.add_list).click()
+  File "C:\Users\mmaged\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 74, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\mmaged\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webelement.py", line 457, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\mmaged\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 233, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mmaged\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Element is not clickable at point (693.0499877929688, 11.199996948242188). Other element would receive the click: <input aria-expanded="false" aria-owns="searchMenuList" aria-autocomplete="list" class="headerSearch__input sc-input g-all-transitions-300" placeholder="Search" name="q" autocomplete="off" aria-label="Search" type="search">
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

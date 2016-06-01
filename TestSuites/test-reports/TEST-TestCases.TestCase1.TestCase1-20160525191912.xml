@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="TestCases.TestCase1.TestCase1-20160525191912" skipped="0" tests="2" time="116.538">
+	<testcase classname="TestCases.TestCase1.TestCase1" name="test_signIn_1___menna_maged_yahoo_com____menna1991__" time="74.825"/>
+	<testcase classname="TestCases.TestCase1.TestCase1" name="test_signIn_2___Admin___123456_0_" time="41.713"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
